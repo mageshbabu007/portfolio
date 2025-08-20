@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+   
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#my skills">Skills</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="image">
+         <img src="img1.jpg" alt="My Photo" class="profile-img" />
+   
+    <div class="profile">
+      <!-- Replace with your image file -->
+     
+      <h1>Hello, I'm Magesh Babu</h1>
+      <p class="typing">Frontend Developer</p>
+      <p>Welcome to my digital space! I'm a passionate Frontend Developer who transforms design visions into interactive web experiences using modern web technologies.</p>
+      <h2><i class='bx bx-envelope'></i> mageshbabu380@gmail.com</h2>
+      <h2><i class='bx bx-phone-call' ></i> 8248740759</h2>
+      
+     
+
+      <div class="social-icons">
+        <a href="https://twitter.com/yourprofile" target="_blank"><i class='bx bxl-twitter' ></i></a>
+        <a href="https://facebook.com/yourprofile" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+        <a href="https://instagram.com/yourprofile" target="_blank"><i class='bx bxl-instagram' ></i></a>
+      </div>
+
+      <a href="your-cv.pdf" class="btn" download>Download CV</a>
+    </div>
+     </div>
+  </section>
+
+  <!-- about -->
+
+   <section class="about-container" id="about">
+    <div class="about-text">
+      <h2><span>Abo</span>ut Us</h2>
+      <p>
+        I’m a passionate Front-End Developer with a love for clean design and elegant code. 
+        My skills include HTML, CSS, JavaScript, and React. I focus on creating responsive, 
+        accessible, and user-friendly websites. With a strong eye for detail and a commitment 
+        to performance, I strive to deliver the best user experiences across all devices.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="img2.jpeg" alt="About Me Image">
+    </div>
+  </section>
+
+  <!-- my skills -->
+
+ <section class="skills-section" id="my skills">
+  <h1> My Skills</h1>
+  <div class="skills-container">
+
+    <!-- Example skill cards -->
+    <div class="skill-card" style="--percentage: 75">
+      <div class="circle">
+        <span class="icon"><i class='bx bxl-html5'></i></span>
+        <span class="percent">HTML<br>75%</span>
+      </div>
+    </div>
+
+    <div class="skill-card" style="--percentage: 70">
+      <div class="circle">
+        <span class="icon"><i class='bx bxl-css3' ></i></span>
+        <span class="percent">CSS<br>70%</span>
+      </div>
+    </div>
+
+    <div class="skill-card" style="--percentage: 55">
+      <div class="circle">
+        <span class="icon"><i class='bx bxl-javascript' ></i></span>
+        <span class="percent">JavaScript<br>55%</span>
+      </div>
+    </div>
+
+    <div class="skill-card" style="--percentage: 40">
+      <div class="circle">
+        <span class="icon"><i class='bx bxl-nodejs' ></i></span>
+        <span class="percent">Node.js<br>40%</span>
+      </div>
+    </div>
+
+    <div class="skill-card" style="--percentage: 60">
+      <div class="circle">
+        <span class="icon"><i class='bx bxl-react' ></i></span>
+        <span class="percent">React<br>60%</span>
+      </div>
+    </div>
+
+    <div class="skill-card" style="--percentage: 40">
+      <div class="circle">
+        <span class="icon"><i class='bx bxl-python' ></i></span>
+        <span class="percent">Python<br>40%</span>
+      </div>
+    </div>
+
+  
+
+<div class="con">
+<div class="container1">
+    <div class="label">HTML</div>
+    <div class="bar"><div class="fill" id="html"></div></div>
+
+    <div class="label">CSS</div>
+    <div class="bar"><div class="fill" id="css"></div></div>
+
+    <div class="label">Javascript</div>
+    <div class="bar"><div class="fill" id="javascript"></div></div>
+  </div>
+  <div class="container2">
+     <div class="label">Node js</div>
+    <div class="bar"><div class="fill" id="nodejs"></div></div>
+
+    <div class="label">React</div>
+    <div class="bar"><div class="fill" id="react"></div></div>
+
+    <div class="label">Python</div>
+    <div class="bar"><div class="fill" id="python"></div></div>
+
+  </div>
+
+  <script>
+    // Animate bars on page load
+    window.onload = function () {
+      document.getElementById("html").style.width = "75%";
+      document.getElementById("css").style.width = "70%";
+      document.getElementById("javascript").style.width = "55%";
+      document.getElementById("nodejs").style.width = "40%";
+      document.getElementById("react").style.width = "60%";
+      document.getElementById("python").style.width = "40%";
+    };
+  </script>
+  </div>
+</div>
+</section>
+
+<!-- project -->
+
+<div class="projects-container" id="project">
+  
+  <div class="project-card">
+    <div class="card-image">
+      <img src="image.png" alt="Car Rent Project" />
+    </div>
+    <div class="card-content">
+      <h3>Car Rent Project</h3>
+      <p>Built with HTML, CSS, JavaScript</p>
+      <a href="click">Click</a> 
+    </div>
+    
+  </div>
+
+  <div class="project-card">
+    <div class="card-image">
+      <img src="img3.png" alt="Portfolio Project" />
+    </div>
+    <div class="card-content">
+      <h3>Portfolio Project</h3>
+      <p>Built with HTML, CSS, JavaScript, React</p>
+      <a href="click">Click</a>
+    </div>
+  </div>
+
+
+    </div>
+
+<!-- contact -->
+ 
+ 
+<div class="contact-container" id="contact">
+  <div class="center-heading"><span>Contact</span> Us</div>
+  <div class="left">
+    <h2>Let's create something amazing together</h2>
+  </div>
+  <div class="right">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+    <button onclick="sendEmail()">Submit</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
